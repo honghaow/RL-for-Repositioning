@@ -2,10 +2,9 @@
 
 # Script to reproduce results
 
-for ((i=0;i<1;i+=1))
+for ((i=0;i<20;i+=1))
 do
-    #for j in 50 100 150 200 250 350 400 450
-    for j in 350 
+    for j in 50 100 150 200 250 350 400 450
     do
         python Demo.py \
         --policy "tlookahead_v2_minimax" \

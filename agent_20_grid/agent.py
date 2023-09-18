@@ -1288,6 +1288,7 @@ class Agent(object):
     def solve_lp_v2_minimax(self, obj_coeff, P_lam, lam_coeff, mu_coeff, R, fraction, mu_coeff_pickup, values_init, values):
         try:
             # Create a new model
+            print(1)
             m = gp.Model("T-lookahead")
             m.setParam('OutputFlag', 0)
             m.setParam('FeasibilityTol', 1e-7)
